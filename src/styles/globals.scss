@@ -1,13 +1,8 @@
+@use '_variables' as v;
+
 :root {
   --background: #ffffff;
   --foreground: #171717;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
 }
 
 html,
@@ -30,17 +25,6 @@ body {
   margin: 0;
 }
 
-a {
-  color: inherit;
-  text-decoration: none;
-}
-
-@media (prefers-color-scheme: dark) {
-  html {
-    color-scheme: dark;
-  }
-}
-
 .our-plan {
   width: 100%;
   min-height: 100vh;
@@ -53,10 +37,36 @@ a {
     font-size: 3rem;
     margin-top: 2em;
     font-weight: 500;
+    padding: 10px 0;
   }
 
   .our-plan-subtitle{
     font-size: 1rem;
+    color: grey;
+  }
+
+  .our-plan-title-highlight {
+    color: #7c3aed;
+  }
+}
+
+.theme-light {
+  background-color: none;
+
+  .our-plan-title{
+    color: v.$light-text-primary;
+
+    .our-plan-title-accent{
+        color: #7c3aed;
+    }
+  }
+}
+
+.theme-dark {
+  background-color: #1e293b;
+
+  .our-plan-title {
+    color: #f5f3ff;
   }
 }
 
