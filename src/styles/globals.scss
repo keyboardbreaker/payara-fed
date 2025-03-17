@@ -19,7 +19,7 @@ body {
 body {
   color: var(--foreground);
   background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: Satoshi, Helvetica, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -40,3 +40,23 @@ a {
     color-scheme: dark;
   }
 }
+
+.our-plan {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  flex-direction: column;
+
+  .our-plan-title {
+    font-size: 3rem;
+    margin-top: 2em;
+    font-weight: 500;
+  }
+
+  .our-plan-subtitle{
+    font-size: 1rem;
+  }
+}
+
